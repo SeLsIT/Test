@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('1-Build') {
             steps {
-                echo 'Privet ${MAINTAINER}
+                echo "Privet ${MAINTAINER}"
                 echo "Project is ${PROJECT_NAME}"
             }
         }
