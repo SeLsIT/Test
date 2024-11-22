@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    evironment {
+        PROJECT_NAME = "Learning of Jenkins"
+        MAINTAINER = 'SENS'
+    }
+    stages {
+        stage('1-Build') {
+            steps {
+                echo 'Privet ${MAINTAINER}
+                echo "Project is ${PROJECT_NAME}"
+            }
+        }
+    }
+}
